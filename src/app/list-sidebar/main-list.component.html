@@ -1,0 +1,78 @@
+<ul id="main-list">
+  <li>
+    <a  routerLink="lol" class="Butt align-items-center collapsed ps-lg-3 ps-1" data-bs-toggle="collapse"
+      data-bs-target="#upgrade-collapse">
+      <i class="fa fa-arrow-alt-circle-up  me-1 "></i> Upgrade <br> subscription
+    </a>
+  </li>
+
+  <li>
+    <a  routerLink="list" class="Butt align-items-center collapsed " data-bs-toggle="collapse" data-bs-target="#home-collapse">
+      <i class="fa fa-home ms-lg-3 ms-1 me-1 "></i> Home
+    </a>
+  </li>
+
+  <li>
+    <a  class="Butt align-items-center collapsed mt-3" data-bs-toggle="collapse"
+      data-bs-target="#meals-collapse" (click)='angle1=!angle1'>
+      <i class="fa fa-hotdog ms-lg-3 ms-1 me-1 "></i> Menu & Offers
+      <i [ngClass]="{'fa-angle-left': angle1,'fa-angle-down':!angle1}"
+        class="fa fa-angle style-angle mt-1 me-lg-3 me-md-2 me-1 "></i>
+    </a>
+
+    <div class="collapse" id="meals-collapse">
+      <ul class="btn-toggle-nav list-unstyled fw-normal small">
+        <li><a routerLink="home8" class="Sha link-dark rounded"> <i class="fa fa-hotdog ms-3 me-1"></i> Menu</a></li>
+        <li><a routerLink="home8" class="Sha link-dark rounded"> <i class="fa fa-tag ms-3 me-1"></i> Offers</a></li>
+      </ul>
+    </div>
+  </li>
+
+  <li>
+    <a  class="Butt align-items-center collapsed mt-3" data-bs-toggle="collapse" data-bs-target="#d-collapse"
+      (click)='angle2=!angle2'>
+      <i class="fa fa-users ms-lg-3 ms-1 me-1 "></i> Users
+      <i [ngClass]="{'fa-angle-left': angle2,'fa-angle-down':!angle2}"
+        class="fa fa-angle style-angle mt-1 me-lg-3 me-md-2 me-1 "></i>
+
+    </a>
+    <div class="collapse" id="d-collapse">
+      <ul class="btn-toggle-nav list-unstyled fw-normal small">
+        <li><a routerLink="home8" class="Sha link-dark rounded"> <i class="fa fa-users ms-3 me-1  "></i> help</a>
+        </li>
+        <li><a routerLink="home8" class="Sha link-dark rounded"> <i class="fa fa-users ms-3 me-1  "></i>community</a></li>
+      </ul>
+    </div>
+  </li>
+
+  <li>
+    <a  class="Butt align-items-center collapsed mt-3" data-bs-toggle="collapse" data-bs-target="#a-collapse"
+      (click)='angle3=!angle3'>
+      <i class="fa fa-check ms-lg-3 ms-1 me-1 "></i> Orders
+      <i [ngClass]="{'fa-angle-left': angle3,'fa-angle-down':!angle3}"
+        class="fa fa-angle  style-angle mt-1 me-lg-3 me-md-2 me-1">
+      </i>
+
+
+    </a>
+    <div class="collapse" id="a-collapse">
+      <ul class="btn-toggle-nav list-unstyled fw-normal small">
+        <li><a routerLink="home8" class="Sha link-dark rounded"> <i class="fa fa-check ms-3 me-1"></i> My Orders</a></li>
+      </ul>
+    </div>
+  </li>
+
+  <li>
+    <a routerLink="home8" class="Butt align-items-center collapsed mt-2 " data-bs-toggle="collapse"
+      data-bs-target="#arketing-collapse">
+      <i class="fa fa-bullhorn ms-3 me-1 "></i> Marketing
+    </a>
+  </li>
+
+  <div id="closeSid">
+    <a>
+      <i class="fa fa-angle-left  me-2 mb-1 p-2" (click)="send()"></i>
+    </a>
+  </div>
+
+</ul>

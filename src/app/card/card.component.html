@@ -1,0 +1,10 @@
+<div class="main-card shadow  bg-white rounded card flex-row">
+  <img class="card-img-lg-left card-img-sm-top"  [src]='data.img' (error)="data.img='./assets/1024.webp'"/>
+  <i class="fas fa-edit" style="position: absolute; top: 10px; left: 10px;"></i>
+  <div class="card-body">
+    <h5 class="card-title ">{{data.name}}</h5>
+    <div id="text">
+      <p class="card-text">{{data.description }} </p>
+    </div>
+  </div>
+</div>

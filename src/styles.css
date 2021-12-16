@@ -1,0 +1,96 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("../node_modules/bootstrap/dist/css/bootstrap.css");
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+mat-sidenav-container {
+  height: 100%;
+}
+
+mat-sidenav {
+  direction: rtl;
+  position: relative;
+  background-color: white;
+  box-shadow: 5px 5px 5px 0px lightgray;
+  height: 100vh;
+  width: 250px;
+}
+
+#contant {
+  direction: ltr;
+  height: 120%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar ::-webkit-scrollbar {
+  width: 5px;
+  display: block;
+}
+
+.scrollbar ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+.scrollbar ::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+
+#main_img_p {
+  display: flex;
+  margin: 1em;
+}
+#main_img_p p {
+  padding-left: 7px;
+  margin-top: 7px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 1024) {
+}
+@media only screen and (max-width: 768px) {
+  mat-sidenav {
+    width: 180px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  mat-sidenav {
+    width: 130px;
+  }
+  #main_img_p {
+    margin: 10px;
+  }
+  #main_img_p img {
+    width: 50px;
+    height: 50px;
+  }
+  #main_img_p p {
+    font-size: 11px;
+    margin-top: 3px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  mat-sidenav {
+    width: 110px;
+  }
+  #main_img_p {
+    margin: 0.5em;
+  }
+  #main_img_p img {
+    width: 40px;
+    height: 45px;
+  }
+  #main_img_p p {
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 320px) {
+}

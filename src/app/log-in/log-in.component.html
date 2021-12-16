@@ -1,0 +1,27 @@
+<div>
+  <img src="../assets/images/restoLogo.svg" alt="gg" width="200px">
+  <form #form="ngForm" (ngSubmit)="Submit(name.value,password.value)">
+    <div>
+      <h1>Log In</h1>
+    </div>
+
+    <input type="text"
+      [ngClass]=" (name.value==''&&name.touched)? 'form-control is-invalid':'form-control is-valid' "
+      placeholder="user name" #name="ngModel" name="name" ngModel required>
+    <div class="note invalid-feedback" *ngIf="(name.touched&&name.value=='')">
+      Please provide a valid user name.
+    </div>
+    <!-- <div class="note invalid-feedback" *ngIf="Check">
+      Please provide a valid user name.
+    </div> -->
+    <input type="password"
+      [ngClass]=" (password.value==''&&password.touched) ? 'form-control is-invalid':'form-control is-valid' "
+      placeholder="password" #password="ngModel" name="password" ngModel required>
+    <div class="note invalid-feedback" *ngIf="(password.touched&&password.value=='')">
+      Please provide a valid password.
+    </div>
+    <div id="button">
+      <button type="submit"> Log In</button>
+    </div>
+  </form>
+</div>

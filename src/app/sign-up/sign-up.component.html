@@ -1,0 +1,68 @@
+<div id="body">
+    <img src="../assets/images/restoLogo.svg" alt="gg" width="200px">
+      <form #form="ngForm" (ngSubmit)="Submit(form.value)">
+  <div>
+    <h1 >Sign Up</h1>
+  </div>
+        
+        <input  type="text" [ngClass]=" (first.value==''&&first.touched) ? 'form-control is-invalid':'form-control is-valid' "  
+          placeholder="First name" 
+           #first="ngModel"
+          name="first"
+        ngModel
+          required
+         
+          >
+        <div  class="note invalid-feedback" *ngIf="(first.touched&&first.value=='')">
+          Please provide a valid first name.
+        </div>
+        
+        <input  type="text" [ngClass]=" (last.value==''&&last.touched) ? 'form-control is-invalid':'form-control is-valid' "  
+          placeholder="Last name" 
+           #last="ngModel"
+          name="last"
+          ngModel
+          required
+          >
+        <div class="note invalid-feedback" *ngIf="(last.touched&&last.value=='')">
+          Please provide a valid last name.
+        </div>
+        
+        <input  type="text" [ngClass]=" (userName.value==''&&userName.touched) ? 'form-control is-invalid':'form-control is-valid' "  
+          placeholder="User name" 
+           #userName="ngModel"
+          name="userName"
+          ngModel
+          required
+          >
+        <div class="note invalid-feedback" *ngIf="(userName.touched&&userName.value=='')">
+          Please provide a valid user name.
+        </div>
+
+        <input  type="password"  [ngClass]=" (password.value==''&&password.touched)? 'form-control is-invalid':'form-control is-valid' "   
+          placeholder="password" 
+           #password="ngModel"
+          name="password"
+           ngModel
+          required>
+        <div class="note invalid-feedback" *ngIf="(password.touched&&password.value=='')">
+          Please provide a valid password.
+        </div>
+       
+        <input  type="password"  [ngClass]="(confirmPassword.value!=password.value) ? 'form-control is-invalid':'form-control is-valid' "   
+          placeholder="Confirm password" 
+           #confirmPassword="ngModel"
+          name="confirmPassword"
+           ngModel
+          required>
+        <div class="note invalid-feedback" *ngIf="(confirmPassword.value==''&&confirmPassword.dirty)">
+          Please provide a valid Confirm password.
+        </div>
+        <div  class="note invalid-feedback" *ngIf="confirmPassword.dirty&&confirmPassword.value!=password.value&&confirmPassword.value.length>=password.value.length ">
+           Confirm password incorrect.
+        </div>
+        <div id="button">
+        <button [disabled]="first.value&& last.value && userName && password.value && confirmPassword.value && password.value==confirmPassword.value? false :true" type="submit"> Sign Up</button>
+      </div>
+      </form>
+  </div>

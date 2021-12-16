@@ -1,0 +1,20 @@
+footer {
+  border-top: 0.6px solid rgba(85, 85, 85, 0.507);
+  height: 2.5em;
+  position: sticky;
+  bottom: 0px;
+  /* right: 0;
+  left: 250px; */
+  background-color: gainsboro;
+  /* width: calc(100% - 250px); */
+  width: 100%;
+}
+footer div p {
+  margin: 0px !important;
+  font-weight: 500;
+}
+@media only screen and (max-width: 425px) {
+  footer {
+    height: auto;
+  }
+}

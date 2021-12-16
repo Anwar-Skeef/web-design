@@ -1,0 +1,31 @@
+.basic {
+  margin-right: 8px !important;
+  margin-top: 8px !important;
+  float: right;
+  background-color: white;
+  color: #555;
+  font-weight: 100;
+  height: 35px;
+  padding-left: 2.1em !important;
+  padding-right: 2.1em !important;
+}
+@media only screen and (max-width: 425px) {
+  .basic {
+    height: 35px;
+    width: 10em;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .basic {
+    margin-right: 3px !important;
+    margin-top: 5px !important;
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .basic {
+    margin-right: 2px !important;
+    margin-top: 2px !important;
+    font-size: 10px;
+  }
+}

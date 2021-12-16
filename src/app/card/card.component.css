@@ -1,0 +1,83 @@
+.main-card:hover {
+  box-shadow: 0px 0px 10px 5px #5555 !important;
+  transition: all 0.5s ease-in;
+}
+.main-card {
+  cursor: pointer;
+
+  border-radius: 12px !important;
+  border: 0px;
+  height: 120px;
+  margin-bottom: 1em;
+}
+img {
+  position: relative;
+  width: 170px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.card-body h5 {
+  margin-bottom: 0em;
+  font-weight: 600;
+}
+#text p {
+  color: lightslategrey;
+  font-size: x-small;
+  font-weight: 400;
+}
+#text {
+  padding-right: 20px;
+  width: 80%;
+  height: 40%;
+  margin: 0%;
+  overflow-y: auto;
+}
+#text:hover::-webkit-scrollbar {
+  display: block;
+  transition: all 0.5s ease-in;
+}
+
+#text::-webkit-scrollbar {
+  width: 2px;
+
+  display: none;
+}
+#text::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+#text::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(34, 33, 33, 0.664);
+}
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 768px) {
+  .card-body h5 {
+    margin-bottom: 0em;
+    font-weight: 600;
+    font-size: 7px;
+  }
+  img {
+    width: 110px;
+  }
+  .main-card {
+    height: 80px;
+  }
+  .card-body {
+    padding: 0.5em;
+  }
+}
+@media only screen and (max-width: 425px) {
+}
+@media only screen and (max-width: 375px) {
+  img {
+    width: 90px;
+  }
+  .main-card {
+    height: 70px;
+  }
+  .card-body {
+    padding: 0.5em;
+  }
+}
