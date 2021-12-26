@@ -1,3 +1,4 @@
+import { HomeGuardGuard } from './guards/home-guard.guard';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { HomeComponent } from './home/home.component';
 import { LogInComponent } from './log-in/log-in.component';
@@ -16,7 +17,7 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
-
+    canActivate: [HomeGuardGuard],
     children: [
       {
         path: '',
