@@ -18,8 +18,6 @@ import { SwitchBtnComponent } from './switch-btn/switch-btn.component';
 import { ListCardComponent } from './list-card/list-card.component';
 import { WaitingComponent } from './waiting/waiting.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { ListenerDirective } from './Directives/listener.directive';
-import { LogInComponent } from './log-in/log-in.component';
 import { HomeComponent } from './home/home.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 @NgModule({
@@ -34,8 +32,6 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     SwitchBtnComponent,
     ListCardComponent,
     WaitingComponent,
-    ListenerDirective,
-    LogInComponent,
     HomeComponent,
     SignUpComponent,
   ],

@@ -1,7 +1,6 @@
 import { HomeGuardGuard } from './guards/home-guard.guard';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { HomeComponent } from './home/home.component';
-import { LogInComponent } from './log-in/log-in.component';
 import { WaitingComponent } from './waiting/waiting.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -36,10 +35,6 @@ const routes: Routes = [
     ],
   },
 
-  {
-    path: 'login',
-    component: LogInComponent,
-  },
   {
     path: 'signup',
     component: SignUpComponent,
